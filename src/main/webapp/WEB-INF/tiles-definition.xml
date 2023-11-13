@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+    <definition name="defaultTemplate" template="/WEB-INF/jsp/tpIndex.jsp">
+        <put-attribute name="title" value=""></put-attribute>
+        <!-- <put-attribute name="menu" value="/WEB-INF/jsp/menu.jsp"/> -->
+        <put-attribute name="tpHeader" value="/WEB-INF/jsp/headers/tpHeader.jsp"/>
+        <put-attribute name="body" value=""/>
+        <put-attribute name="tpFooter" value="/WEB-INF/jsp/footer/tpFooter.jsp"/>
+    </definition>
+
+    <definition name="tpLogin" extends="defaultTemplate">
+        <put-attribute name="title" value="Admin Login"/>
+        <put-attribute name="body" value="/WEB-INF/jsp/tpLogin.jsp"/>
+
+    </definition>
+
+    <definition name="tpProject" extends="defaultTemplate">
+        <put-attribute name="title" value="Projects page"/>
+        <put-attribute name="body" value="/WEB-INF/jsp/tpProjects.jsp"/>
+    </definition>
+
+    <definition name="tpRegister" extends="defaultTemplate">
+        <put-attribute name="title" value="Register Master"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/jsp/tpRegister.jsp"></put-attribute>
+    </definition>
+
+    <definition name="tpProjectMaster" extends="defaultTemplate">
+        <put-attribute name="title" value="Project Master"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/jsp/tpProjectMaster.jsp"></put-attribute>
+    </definition>
+
+    <definition name="tpWelcome" extends="defaultTemplate">
+        <put-attribute name="title" value="Welcome Master1"/>
+        <put-attribute name="body" value="/WEB-INF/jsp/tpWelcome.jsp"/>
+    </definition>
+
+
+    <!--
+    <definition name="register" extends="defaultTemplate">
+        <put-attribute name="title" value="Register Master"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/jsp/register.jsp"></put-attribute>
+    </definition>
+
+     <definition name="welcome" extends="defaultTemplate">
+        <put-attribute name="title" value="Welcome Master1"/>
+        <put-attribute name="body" value="/WEB-INF/jsp/welcome.jsp"/>
+    </definition>
+
+
+    <definition name="welcome" extends="defaultTemplate">
+        <put-attribute name="title" value="Welcome Master2"/>
+        <put-attribute name="body" value="/WEB-INF/jsp/welcome.jsp"/>
+    </definition> -->
+
+    <definition name="tpHome" extends="defaultTemplate">
+        <put-attribute name="title" value="Home page"/>
+        <put-attribute name="body" value="/WEB-INF/jsp/tpHome.jsp"/>
+    </definition>
+
+    <definition name="tpDashboard" extends="defaultTemplate">
+        <put-attribute name="title" value="Dashboard page"/>
+        <put-attribute name="body" value="/WEB-INF/jsp/tpDashboard.jsp"/>
+    </definition>
+
+    <!-- <definition name="loadImage" extends="defaultTemplate">
+        <put-attribute name="title" value="Image Process"/>
+        <put-attribute name="body" value="/WEB-INF/jsp/loadImage.jsp"/>
+    </definition>
+
+        <definition name="success" extends="defaultTemplate">
+        <put-attribute name="title" value="Success Page"/>
+        <put-attribute name="body" value="/WEB-INF/jsp/success.jsp"/>
+    </definition>
+
+    <definition name="registerSuccess" extends="defaultTemplate">
+        <put-attribute name="title" value="Registration Success Page"/>
+        <put-attribute name="body" value="/WEB-INF/jsp/registerSuccess.jsp"/>
+
+    </definition> -->
+
+</tiles-definitions>  
